@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsf/core">
+<head>
+  <title><ui:insert name="index"></ui:insert></title>
+</head>
+
+<body>
+
+
+<h1>INTRODUZCA USUARIO, CONTRASEÑA Y DNI</h1>
+
+<h:form>
+	
+	<h:outputLabel for="nombre">${msjs.inputNombre}</h:outputLabel>
+	<h:inputText id="nombre" value="#{persona.nombre}"/>
+
+<br/>
+	
+	<h:outputLabel for="dni">${msjs.inputdni}</h:outputLabel>
+	<h:inputText id="dni" value="#{persona.dni}"/>
+	
+<br/>
+
+	<h:outputLabel for="password">${msjs.inputPassword}</h:outputLabel>
+	<h:inputSecret id="password" value="#{persona.password}"/>
+	
+<br/>
+	
+	
+	<h:commandButton type="submit" value="#{msjs.enviar}" action="#{persona.decideQueHacer}"/>
+
+
+	</h:form>
+
+
+
+</body>
+
+</html>

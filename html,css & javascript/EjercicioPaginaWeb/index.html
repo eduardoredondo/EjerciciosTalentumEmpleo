@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>EDU/COM ¡¡Tu sitio de actualidad GAMER!!</title>
+<meta charset="utf-8">
+<meta name="description" content="Tu tienda online de Gaming" />
+<meta name="keywords" content="tecnología, moviles, tv, portatiles" />
+<meta name="author" content="Eduardo Redondo Pérez" />
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/AG_Foreigner_Light-Plain_400.font.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+<script type="text/javascript" src="js/tabs.js"></script>
+<script type="text/javascript" src="js/jquery.faded.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!--
+1- Cambio titulos de la barra menu superior de cada html.
+2-Quito el encabezado y lo cambio por una imagen personalizada creada en canva.com
+3-Cambio los sliders a mi gusto.
+4- Añado noticias, imagenes png para adornar. Elimino pie de pagina con los datos anteriores
+5- Limpio codigo que para mi es inutil
+6- intento ajustar las fotos lo mejor posible. Paso a lo siguiente, no tengo tiempo!
+7- Seccion consolas, cambio fotos, las ajusto ( utilizo pngs transparentes).
+8-Informo un poco sobre lo que se podra encontrar en esa seccion.
+9-Defino secciones y paso al siguiente
+10- Las url de los htmls no las cambiare para no perder tiempo. Se quedan con la definicion original
+11- En la seccion juegos al pinchar en la imagen te lleva al video de alguna partida o competicion del juego en cuestion
+12-En contactos pongo el formulario  y los datos de contacto ficticios.
+13- Por ultimo modal de cookies en la pagina principal
+
+-->
+
+</head>
+<body id="page1">
+<div class="wrap"><div class="ic"><!-- HLinks --></div>
+	 <!-- header -->
+	 <header>
+			<div class="container">
+				 <nav>
+						<ul>
+							 <li><a href="index.html" class="active"><span><span>Inicio</span></span></a></li>
+							 <li><a href="about-us.html"><span><span>Consolas</span></span></a></li>
+							 <li><a href="privacy.html"><span><span>Juegos</span></span></a></li>
+							 <li><a href="contact-us.html"><span><span>Contacto</span></span></a></li>
+							 
+						</ul>
+				 </nav>
+				
+				 <div class="tab_container">
+						<div id="tab1" class="tab_content">
+							 <div class="faded">
+									<ul class="big-image">
+										 <li><img  src="images/ezio.jpg" style="max-width: 580px; max-height: 510px"></li>
+										 <li><img src="images/marcus.jpg" style="max-width: 580px; max-height: 510px"></li>
+										 <li><img src="images/trevor.jpg" style="max-width: 580px; max-height: 510px"></li>
+									</ul>
+									<ul class="pagination">
+										 <li><a href="#" rel="0"><img src="images/ezio.jpg"  style="max-width: 150px;" ></a></li>
+										 <li><a href="#" rel="1"><img src="images/marcus.jpg" style="max-width: 150px"></a></li>
+										 <li><a href="#" rel="2"><img src="images/trevor.jpg" style="max-width: 150px"></a></li>
+									</ul>
+							 </div>
+						</div>
+						
+			</div>
+	 </header>
+	 <div class="container">
+			<!-- aside -->
+			<aside>
+				 <div class="inside">
+						
+						<figure><img src="images/mario.png" width="60%"></figure>
+				 </div>
+			</aside>
+			<!-- content -->
+			<section id="content">
+				 <div class="wrapper">
+						<article class="col-1">
+							 <h2>Bienvenidos</h2>
+							 <img src="images/minion.png" height="180px" class="img-indent">
+							 <p> 
+
+							 <h2>Bienvenidos a EDU/COM</h2>
+							 <h3>Tu pagina de referencia en noticias y todo</h3>
+							 <h3>lo relacionado con gaming.</h3>
+
+							 </p>
+						</article>
+						<article class="col-2">
+							 <h2>NOVEDADES</h2>
+							 <ul class="news">
+									<li><span>4</span><strong><a href="#">NINTENDO SWITCH</a><br>
+										 Ya a la venta la nueva consola de nintendo</strong></li>
+									<li><span>2</span><strong><a href="#">ZELDA: BREATH OF THE WILD</a><br>
+										 El nuevo zelda para switch recibe unas notas impresionantes de la prensa especializada.</strong></li>
+									<li><span>5</span><strong><a href="#">THE DIVISION</a><br>
+										 The division recibira 2 nuevas expansiones completamente gratis</strong></li>
+							 </ul>
+						</article>
+				 </div>
+			</section>
+	 </div>
+</div>
+<!-- footer -->
+<footer>
+	 <div class="container">
+			<div class="inside"> <a >Website modificado</a> por edu.<br>
+				 <a>Para</a> david<br>
+            <!-- VLinks --></div>
+	 </div>
+	 <div class="modal">
+  <button class="close">cerrar</button>
+  <p>Esta web utiliza cookies para obtener datos estadísticos de la navegación de sus usuarios y nos obligan a soltarte el truño este de las narices. <a href="#">Más información</a></p>
+</div>
+<script src="js/jquery-2.0.3.min.js"></script> 
+<script>
+
+$('.modal .close').on('click', cierraModal);
+
+function cierraModal () {
+    $('.modal').animate({ bottom: - $('.modal').height() }, borraModal)
+}
+function borraModal () {
+    $(this).remove()
+}
+</script>
+</footer>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
